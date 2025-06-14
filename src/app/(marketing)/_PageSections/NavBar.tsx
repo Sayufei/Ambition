@@ -9,12 +9,13 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle
-  const items = [
-  { title: 'Home', href: '/' },
-  { title: 'Pricing', href: '/pricing' },
-  { title: 'Features', href: '/features' },
+} from "@/components/ui/navigation";
+
+const items = [
+  { title: "Home", href: "/" },
+  { title: "Pricing", href: "/pricing" },
+  { title: "Features", href: "/features" },
 ];
-} from '@/components/ui/Navigation';
 
 
 import { MobileNav, NavProps } from '@/components/MobileNav';
