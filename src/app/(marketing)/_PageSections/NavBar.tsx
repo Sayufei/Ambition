@@ -9,12 +9,17 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle
+  const items = [
+  { title: 'Home', href: '/' },
+  { title: 'Pricing', href: '/pricing' },
+  { title: 'Features', href: '/features' },
+];
 } from '@/components/ui/Navigation';
 
 
 import { MobileNav, NavProps } from '@/components/MobileNav';
 
-export const Nav = ({ items }: NavProps) => {
+export const Nav = () => {
   return (
     <Link href="/" className="mr-4 flex items-center space-x-2">
   <Image src="/tumoh-logo.png" alt="Tumoh Logo" width={40} height={40} />
