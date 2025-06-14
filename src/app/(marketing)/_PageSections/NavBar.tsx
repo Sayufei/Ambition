@@ -1,4 +1,6 @@
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
 import * as React from 'react';
 
 import {
@@ -9,12 +11,15 @@ import {
   navigationMenuTriggerStyle
 } from '@/components/ui/Navigation';
 
-import Link from 'next/link';
 
 import { MobileNav, NavProps } from '@/components/MobileNav';
 
 export const Nav = ({ items }: NavProps) => {
   return (
+    <Link href="/" className="mr-4 flex items-center space-x-2">
+  <Image src="/tumoh-logo.png" alt="Tumoh Logo" width={40} height={40} />
+  <span className="font-bold text-lg">Tumoh</span>
+</Link>
     <div>
       <NavigationMenu className="hidden md:inline-block">
         <NavigationMenuList>
