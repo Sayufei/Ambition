@@ -38,7 +38,7 @@ export const Nav = () => {
             </NavigationMenuItem>
           ))}
         </NavigationMenuList>
-      </NavigationMenu>
+      </NavigationMenu>,
       <MobileNav items={items} />
     </div>
   );
